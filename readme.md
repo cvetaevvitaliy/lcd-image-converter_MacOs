@@ -1,10 +1,12 @@
-# <img src="resources/icons/lcd-image-converter-64.png"/> LCD Image Converter
+# <img src="resources/icons/lcd-image-converter-64.png"/> LCD Image Converter for MacOS
 [![Travis Build Status](https://img.shields.io/travis/riuson/lcd-image-converter.svg?label=linux)](https://travis-ci.org/riuson/lcd-image-converter)
 [![Coverity Scan](https://img.shields.io/coverity/scan/3997.svg?maxAge=2592000)](https://scan.coverity.com/projects/riuson-lcd-image-converter)
 
 Tool to create bitmaps and fonts for embedded applications, v.2
 
 Allows you to create bitmaps and fonts, and transform them to "C" source format for embedded applications.
+
+Download  <a href="https://github.com/cvetaevvitaliy/lcd-image-converter_MacOs/blob/master/lcd-image-converter.app.zip">lcd-image-converter.app.zip</a> , unzip and run App
 
 ## Features
 - Supported display controllers
@@ -29,22 +31,6 @@ Allows you to create bitmaps and fonts, and transform them to "C" source format 
   - [Latest downloads](http://www.riuson.com/lcd-image-converter/download)
   - [Changelog](http://www.riuson.com/lcd-image-converter/changelog)
 - [Source code repository on GitHub](https://github.com/riuson/lcd-image-converter)
-
-## Contacts and support
- - Author: Vladimir
- - Mailto: riuson@gmail.com
- - [GitHub Issues](https://github.com/riuson/lcd-image-converter/issues)
-
-## How to build on GNU/Linux
-~~~
-git clone https://github.com/riuson/lcd-image-converter.git ~/lcd-image-converter
-cd ~/lcd-image-converter
-qmake
-make
-~~~
-Requires some additional packages.
-Build logs available on [Travis-CI](https://travis-ci.org/riuson/lcd-image-converter).
-
 
 
 ## License

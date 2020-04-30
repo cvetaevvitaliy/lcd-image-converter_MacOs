@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/rotate">
+        <file alias="0">resources/samples/rotate/rotate0.png</file>
+        <file alias="90">resources/samples/rotate/rotate90.png</file>
+        <file alias="180">resources/samples/rotate/rotate180.png</file>
+        <file alias="270">resources/samples/rotate/rotate270.png</file>
+    </qresource>
+    <qresource prefix="/flip">
+        <file alias="0">resources/samples/flip/flip.png</file>
+        <file alias="horizontal">resources/samples/flip/flip-horizontal.png</file>
+        <file alias="vertical">resources/samples/flip/flip-vertical.png</file>
+    </qresource>
+    <qresource prefix="/shift">
+        <file alias="down">resources/samples/shift/down.png</file>
+        <file alias="left">resources/samples/shift/left.png</file>
+        <file alias="original">resources/samples/shift/original.png</file>
+        <file alias="right">resources/samples/shift/right.png</file>
+        <file alias="up">resources/samples/shift/up.png</file>
+    </qresource>
+    <qresource prefix="/scan_scripts">
+        <file alias="scan_template">../resources/scan_scripts/scan_template.js</file>
+        <file alias="pixels_template">../resources/scan_scripts/pixels_template.js</file>
+        <file alias="pixels_example">../resources/scan_scripts/pixels_example.js</file>
+    </qresource>
+    <qresource prefix="/settings">
+        <file alias="xml">resources/samples/settings/settings.xml</file>
+    </qresource>
+</RCC>

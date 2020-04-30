@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data type="history" title="Changelog" version="2">
+    <record>
+        <commit>
+            <sha1>current</sha1>
+            <date>current</date>
+        </commit>
+        <changes>
+            <item category="added">Command line option '--input' to specify font document xml file for command-line mode conversion.</item>
+            <item category="added">Tags app_rev and app_date for application revision and date.</item>
+            <item category="added">Completer to encoding's combobox.</item>
+            <item category="added">New tag 'out_image_preview' and settings to generate image preview in output file.</item>
+            <item category="added">Custom script to process pixel's data.</item>
+            <item category="added">Multiplicity of font's width/height.</item>
+            <item category="changed">RLE minimal sequence block's count decreased to 1.</item>
+            <item category="changed">RLE prefix for sequence with length == 1 changed from '(-1)(data[1])' to '(+1)(data[1])'.</item>
+            <item category="changed">Tab page 'Prepare' in settings.</item>
+            <item category="changed">Tooltips on toolbuttons.</item>
+            <item category="changed">Set font's encoding to UTF-8 by default.</item>
+            <item category="changed">Optimize height/width in Resize dialog.</item>
+            <item category="fixed">Losing of empty parameters in Image settings block.</item>
+            <item category="fixed">Selection of template files in the settings.</item>
+            <item category="fixed">Clear the fill mask when changing the data block size.</item>
+            <item category="fixed">Editor's selection outline.</item>
+            <item category="fixed">Build with Qt 5.11.</item>
+            <item category="fixed">Scanning of images of 1px width, splitted to rows, for predefined scripts only.</item>
+            <item category="removed">Support for Qt version &lt; 5.5.</item>
+            <item category="removed">Ability to hide toolbars.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>bf3294de67cc733e9b41d7b2b22e16a14055abc0</sha1>
+            <date>2017-03-20 21:03:09 +0500</date>
+        </commit>
+        <changes>
+            <item category="added">Change scale with mouse wheel in Resize dialog.</item>
+            <item category="added">Command line options '--config-application' and '--config-presets' to specify xml file with configuration data.</item>
+            <item category="added">Command line option '--config-reset' to reset configuration data at default state.</item>
+            <item category="changed">Selection color. To get more perceptibility on monochrome and color images.</item>
+            <item category="changed">Naming of preset's sections in settings. For compatibility with xml format.</item>
+            <item category="fixed">Column's width in character's table on Font Setup dialog.</item>
+            <item category="fixed">Translation.</item>
+            <item category="fixed">Scroll mode on Resize dialog.</item>
+            <item category="fixed">Select previous font size at font setup dialog.</item>
+            <item category="fixed">Crop/Resize and Shift/Rotate methods for images with alpha-channel.</item>
+            <item category="fixed">Load parameters for preset on setup dialog opening, when preset first in list.</item>
+            <item category="removed">Support for previous settings version.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>466b2e23a03ccf57597fbae90b918ee75a3ebf5e</sha1>
+            <date>2016-10-12 21:59:31 +0500</date>
+        </commit>
+        <changes>
+            <item category="added">Menu item 'File' -&gt; 'Close All'.</item>
+            <item category="added">Save last directory and filter index in dialogs.</item>
+            <item category="added">Show original and new size in Resize dialog.</item>
+            <item category="added">Filters *.cpp and *.h in save conversion results dialog.</item>
+            <item category="added">Selection tool (mouse left, middle and right buttons).</item>
+            <item category="added">Moving tool for selected area or entire image.</item>
+            <item category="changed">Get changelog from server with versioning.</item>
+            <item category="changed">Processing of mouse movements also outside the borders of the image.</item>
+            <item category="changed">If there is selected area, tools line/rect/fill/pen used only inside it.</item>
+            <item category="fixed">Alpha-channel in Preview dialog for color presets.</item>
+            <item category="fixed">Save last scale value in Preview dialog.</item>
+            <item category="fixed">Preserve spaces for image suffix/prefix/delimiter in preset xml export/import.</item>
+            <item category="fixed">Some optimization in JS script evaluation and in dialog Options -&gt; Conversion.</item>
+            <item category="fixed">Xml file not opened twice. Instead, tab with this file is actived.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>29a5a98e5a0f60508280fe90fd456ae32954303e</sha1>
+            <date>2016-07-21 21:57:05 +0500</date>
+        </commit>
+        <changes>
+            <item category="added">Combine similar characters in images table.</item>
+            <item category="added">Simple drawing tools (rect, point, fill, line).</item>
+            <item category="added">Import/export presets to xml files.</item>
+            <item category="added">Font ascent/descent tags.</item>
+            <item category="added">Alpha component for foreground and background colors.</item>
+            <item category="added">Support for transparent character background.</item>
+            <item category="added">Set foreground and background colors with command line.</item>
+            <item category="fixed">Preview with empty script.</item>
+            <item category="fixed">Image output for empty conversion data (image too small or skipped by custom algorithm).</item>
+            <item category="fixed">Workaroung for infinite loop then adding points.</item>
+            <item category="changed">New dialog to setup font.</item>
+            <item category="changed">Templates.</item>
+            <item category="changed">Use unicode characters only from 0x0000 to 0xffff.</item>
+            <item category="changed">Changelog xml file format.</item>
+            <item category="removed">Removed option 'alpha-channel' in font document, with command line argument and template tags.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>ff449e0c73a0ed4c77e835441f7593daca6e3da1</sha1>
+            <date>2014-12-14 12:47:27 +0500</date>
+        </commit>
+        <changes>
+            <item category="added">Command line mode for image conversion.</item>
+            <item category="added">Command line mode for font conversion.</item>
+            <item category="added">Command line mode for hexadecimal to binary file conversion.</item>
+            <item category="added">Import multimple images to font.</item>
+            <item category="added">Menu option to convert color image to grayscale.</item>
+            <item category="added">Option for RLE minimal length of equal blocks.</item>
+            <item category="added">Scaling in settings preview.</item>
+            <item category="fixed">Shadow Build support (partially).</item>
+            <item category="fixed">Default document and file name for new documents.</item>
+            <item category="fixed">Save Changes dialog.</item>
+            <item category="fixed">'AntiAliasing' option in saved font document.</item>
+            <item category="fixed">Encodings list sorted in New Font -&gt; Append Range.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>6998b5ed23fbb240a14987e38d4563e8d4c8221e</sha1>
+            <date>2014-02-25 19:39:05 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">Optional characters sorting in 'Font Change...' dialog.</item>
+            <item category="fixed">Broken image prepare sequence.</item>
+            <item category="fixed">Russian translation.</item>
+            <item category="fixed">Loading of images in some formats.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>c026d86327e5f04f3abec55993f611256557efd6</sha1>
+            <date>2013-10-28 21:32:36 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">New encodings.</item>
+            <item category="added">Sorting table characters by codes.</item>
+            <item category="added">Dialog to select new characters by range.</item>
+            <item category="added">Ability to specify custom font size.</item>
+            <item category="added">Control characters (0x01...0x1f) support.</item>
+            <item category="added">New tag 'out_images_max_blocks_count'.</item>
+            <item category="added">Optional value of trailing bits.</item>
+            <item category="added">Custom prefix, suffix and delimiter for data blocks.</item>
+            <item category="added">Copy and Paste operations.</item>
+            <item category="added">Alpha-channel support.</item>
+            <item category="added">User-defined script to specify pixel's scan order.</item>
+            <item category="fixed">Cells size to fit big characters (Font Select dialog).</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>ce530e158ca31dfbf6cb7268d8abbaef60deca32</sha1>
+            <date>2013-03-16 16:36:45 +0600</date>
+        </commit>
+        <changes>
+            <item category="fixed">Feature 'Optimize height'.</item>
+            <item category="fixed">Save font parameters for newly created font.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>559bd5a29c5725863955aa5f974598aef8dff630</sha1>
+            <date>2013-03-13 21:37:41 +0600</date>
+        </commit>
+        <changes>
+            <item category="fixed">Invalid status on first-time selection.</item>
+            <item category="fixed">Indent and EOL for the output image data.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>b1e5f171a1b6ecd5593003a2aa35191022537dd9</sha1>
+            <date>2013-03-05 23:31:02 +0600</date>
+        </commit>
+        <changes>
+            <item category="fixed">Character's filter in resize dialog.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>e3845185e979677235a2d12243b675b96ce225c6</sha1>
+            <date>2013-02-10 09:49:25 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">Unicode blocks.</item>
+            <item category="added">New tag names.</item>
+            <item category="added">Changed 'Resize' dialog.</item>
+            <item category="added">Font preview's size can be changed by Ctrl+Wheel.</item>
+            <item category="added">A separate dialog box to check for updates.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>4e8c626a9ac009c14f867b3b1a222cb530d6536c</sha1>
+            <date>2013-01-09 21:49:30 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">Reordering bits.</item>
+            <item category="added">Scanning of the bands.</item>
+            <item category="added">Scaling by mouse wheel + Ctrl.</item>
+            <item category="fixed">Bug when editing template file paths.</item>
+            <item category="fixed">A grid in the 'Font preview' dialog restored.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+        <sha1>b4efed4af0b9d1237c2c386ce81ffd3a6ab09a47</sha1>
+        <date>2012-12-23 13:02:18 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">Undo/Redo support.</item>
+            <item category="fixed">Font regeneration algorithm was changed: possible add new character without changing others.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>d2c542188773b33a08050163bf172d2478db015f</sha1>
+            <date>2012-11-05 21:21:31 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">Dialog 'Setup' was changed.</item>
+            <item category="added">RLE compression.</item>
+            <item category="added">Feature to combine selected characters to one image.</item>
+            <item category="added">Opening many files at once.</item>
+            <item category="added">Output file name are now saved in document.</item>
+            <item category="added">Document's file are now selected by default in 'Save' dialog.</item>
+            <item category="added">Call of external tool to image editing.</item>
+            <item category="added">Shift image to up/down/left/right.</item>
+            <item category="added">Conversion for all opened documents at once.</item>
+            <item category="added">Changed characters list in font's editor.</item>
+            <item category="added">Version history in 'About' dialog.</item>
+            <item category="added">'Check updates' in 'About' dialog, by downloading history from project's home page.</item>
+            <item category="fixed"></item>
+            <item category="fixed">Italic font's drawing.</item>
+            <item category="fixed">Reading of configuration templates.</item>
+            <item category="fixed">Order of bytes for Unicode Little-Endian and Big-Endian.</item>
+            <item category="fixed">Font size changed from points to pixels, to avoid depending of the font size from screen's DPI.</item>
+            <item category="fixed">Scan direction for settings more easy.</item>
+            <item category="fixed">Changed template's variables format.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>be13e6f34980f9b8eb23c0a82f508a1da36a8fa9</sha1>
+            <date>2012-09-01 13:02:03 +0600</date>
+        </commit>
+        <changes>
+            <item category="changed">Conversion algorithm was fully changed to make it more universally and flexible. Please, read wiki for more information about it.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>0421b4dc6c65e9542da2944ec7a90121b44c92ba</sha1>
+            <date>2012-07-24 23:11:14 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">BOM (append/remove) option for unicode font output.</item>
+            <item category="added">Font preview dialog.</item>
+            <item category="added">Multi characters inserting in font select dialog.</item>
+            <item category="fixed">Unicode character codes.</item>
+            <item category="fixed">Bug with replacing character 'd' by default image.</item>
+            <item category="fixed">Small changed in menu items text.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>de6afc93daac00a0e6f49d755c018acb139323c5</sha1>
+            <date>2012-07-15 23:47:44 +0600</date>
+        </commit>
+        <changes>
+            <item category="fixed">Empty items on start screen.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>73cfc6dc557d950efbdd8200e369f3a6d129d3e0</sha1>
+            <date>2012-07-14 17:51:42 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">Start screen.</item>
+            <item category="added">Image files support in menu 'File-&gt;Open'.</item>
+            <item category="fixed">Missing items in recent files list.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>53c6001d23038f699ee4aeb30e46a1f77c7fc956</sha1>
+            <date>2012-06-24 21:25:31 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">Version info.</item>
+            <item category="added">Icon.</item>
+            <item category="added">Conversion settings to output file.</item>
+            <item category="added">Grid for scale &gt; 5x.</item>
+            <item category="added">'Recent files list' (menu).</item>
+            <item category="fixed">Disappear of the image when changing language.</item>
+            <item category="fixed">Default (empty) file extension.</item>
+            <item category="fixed">'Changed' flag for bitmaps (on rename) and fonts (on create).</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>0dc5abc4b1ec71b824272b7fc8d2ca2224468599</sha1>
+            <date>2012-05-06 16:13:24 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">Added plugins for images, other than png and bmp.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>a3cc404de559e63a2eae13a95f440d84183a1b1b</sha1>
+            <date>2012-02-17 21:13:34 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">Shortcuts.</item>
+            <item category="added">Save scale value to settings.</item>
+            <item category="added">Feature 'Minimize font height'.</item>
+            <item category="added">Feature 'Minimize font height'.</item>
+            <item category="added">Translation for strings with degree sign.</item>
+            <item category="changed">Repository migrated from Mercurial to Git. Rev.5d7a8e3fe7 from hg is the equivalent of a rev.a3cc404de559 from git.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>7afedd295dffcc50fed3180b44824878ab9f3840</sha1>
+            <date>2011-12-31 15:24:59 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">Feature 'rename document'.</item>
+            <item category="added">Compiled (binary) translation file removed from version control.</item>
+            <item category="added">Display real (maximum) height for selected font/style/size.</item>
+            <item category="fixed">Widget's layout on 'DialogConvert'.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>5c26d14dc9654b57d639579ced2bf2619f4e2da6</sha1>
+            <date>2011-12-28 18:45:01 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">Russian translation.</item>
+            <item category="fixed">Saving settings on Windows XP.</item>
+            <item category="fixed">Rotation setup loss.</item>
+            <item category="fixed">Error in image template.</item>
+            <item category="fixed">No need to tranlsate new document's name.</item>
+            <item category="fixed">Save width/height when image rotated.</item>
+        </changes>
+    </record>
+    <record>
+        <commit>
+            <sha1>4816c84a7b9eb948ce1f511d26e041095ba79278</sha1>
+            <date>2010-12-27 01:01:20 +0600</date>
+        </commit>
+        <changes>
+            <item category="added">First release</item>
+        </changes>
+    </record>
+</data>
